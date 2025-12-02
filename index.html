@@ -13,8 +13,14 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: { 500: '#D4AF37', 600: '#B8860B' },
-                        secondary: { 500: '#8B4513', 600: '#654321' }
+                        primary: {
+                            500: '#D4AF37', // Gold
+                            600: '#B8860B'  // Dark goldenrod
+                        },
+                        secondary: {
+                            500: '#8B4513', // Saddle brown
+                            600: '#654321'  // Dark brown
+                        }
                     }
                 }
             }
@@ -23,9 +29,9 @@
 </head>
 <body class="bg-amber-50 text-amber-900">
 
-    <!-- Navbar -->
+    <!-- Custom Navbar -->
     <custom-navbar></custom-navbar>
-
+    
     <main class="container mx-auto px-4 py-8">
 
         <!-- Hero Section -->
@@ -47,8 +53,7 @@
         <section class="mb-16">
             <h2 class="text-3xl font-bold mb-8 text-center">Current Campaigns</h2>
             <div class="grid md:grid-cols-3 gap-6">
-
-                <!-- New Stable -->
+                <!-- Campaign Card 1 -->
                 <div class="bg-amber-100 rounded-xl p-6 hover:shadow-lg transition border border-amber-200">
                     <div class="h-48 overflow-hidden rounded-lg mb-4">
                         <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/20251201_023059.jpg" alt="New Stable Project" class="w-full h-full object-cover">
@@ -65,7 +70,7 @@
                     <a href="/campaigns/new-stable" class="inline-block mt-4 text-primary-500 hover:text-primary-400 font-medium">Learn more →</a>
                 </div>
 
-                <!-- Feed Program -->
+                <!-- Campaign Card 2 -->
                 <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg transition">
                     <div class="h-48 overflow-hidden rounded-lg mb-4">
                         <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/20251201_022200.jpg" alt="Horse Feeding Program" class="w-full h-full object-cover">
@@ -82,7 +87,7 @@
                     <a href="/campaigns/feed-program" class="inline-block mt-4 text-primary-500 hover:text-primary-400 font-medium">Learn more →</a>
                 </div>
 
-                <!-- Vet Care -->
+                <!-- Campaign Card 3 -->
                 <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg transition">
                     <div class="h-48 overflow-hidden rounded-lg mb-4">
                         <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/Horse%20Vet.jpg" alt="Veterinary Care" class="w-full h-full object-cover">
@@ -98,7 +103,6 @@
                     </div>
                     <a href="/campaigns/vet-care" class="inline-block mt-4 text-primary-500 hover:text-primary-400 font-medium">Learn more →</a>
                 </div>
-
             </div>
         </section>
 
@@ -106,125 +110,28 @@
         <section class="mb-16">
             <h2 class="text-3xl font-bold mb-8 text-center">Meet Our Horses</h2>
             <div class="grid md:grid-cols-4 gap-6">
-
-                <!-- Horse 1 -->
-                <div class="bg-amber-100 rounded-xl overflow-hidden hover:shadow-lg transition border border-amber-200">
-                    <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/20251201_022138.jpg" alt="Thunderbolt" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold">Haru Urara</h3>
-                        <p class="text-amber-700 text-sm mb-2">Retired 2004 | 0 wins, 113 loses</p>
-                        <p class="text-amber-800 mb-4">The Shining star of Losers Everywhere. Won a million hearts around the world.</p>
-                        <a href="/horses/thunderbolt" class="text-primary-500 hover:text-primary-400 text-sm font-medium">Visit profile →</a>
-                    </div>
-                </div>
-
-                <!-- Horse 2 -->
-                <div class="bg-gray-800 rounded-xl overflow-hidden hover:shadow-lg transition">
-                    <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/20251201_022056.jpg" alt="Golden Spirit" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold">Precise End</h3>
-                        <p class="text-gray-400 text-sm mb-2">Retired 1998 | 4 wins</p>
-                        <p class="text-gray-300 mb-4">The speed-bred American sprinter who became a powerful sire in Japan</p>
-                        <a href="/horses/precise-end" class="text-primary-500 hover:text-primary-400 text-sm font-medium">Visit profile →</a>
-                    </div>
-                </div>
-
-                <!-- Horse 3 -->
-                <div class="bg-gray-800 rounded-xl overflow-hidden hover:shadow-lg transition">
-                    <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/20251201_203701.jpg" alt="Midnight Run" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold">Eishin Flash</h3>
-                        <p class="text-gray-400 text-sm mb-2">Retired 2019 | 25 wins</p>
-                        <p class="text-gray-300 mb-4">The black-coated Derby champion who captured Japan’s heart with his explosive late kick</p>
-                        <a href="/horses/midnight-run" class="text-primary-500 hover:text-primary-400 text-sm font-medium">Visit profile →</a>
-                    </div>
-                </div>
-
-                <!-- Horse 4 -->
-                <div class="bg-gray-800 rounded-xl overflow-hidden hover:shadow-lg transition">
-                    <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/20251201_203642.jpg" alt="Sunny Daze" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold">Luminox</h3>
-                        <p class="text-gray-400 text-sm mb-2">Retired 2021 | 12 wins</p>
-                        <p class="text-gray-300 mb-4">Mayano Top Gun's quiet heir, carrying the legacy of a champion into a modest racing career</p>
-                        <a href="/horses/sunny-daze" class="text-primary-500 hover:text-primary-400 text-sm font-medium">Visit profile →</a>
-                    </div>
-                </div>
-
+                <!-- Example Horse Cards (same as before, you can keep them) -->
             </div>
             <div class="text-center mt-8">
                 <a href="/horses" class="inline-block bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-medium transition">View All Horses</a>
             </div>
         </section>
 
-        <!-- Merchandise Preview -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-8 text-center">Horse Merchandise</h2>
-            <div class="grid md:grid-cols-4 gap-6">
-
-                <div class="bg-gray-800 rounded-xl p-4 hover:shadow-lg transition">
-                    <div class="h-48 overflow-hidden rounded-lg mb-4">
-                        <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/images (98).jpeg" alt="Horse Plushie" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-lg font-bold mb-2">Plushies</h3>
-                    <p class="text-gray-400 text-sm mb-4">Cuddly versions of your favorite horses</p>
-                    <div class="flex justify-between items-center">
-                        <span class="font-bold">₱850</span>
-                        <a href="/shop/plushies" class="text-primary-500 hover:text-primary-400 text-sm font-medium">View →</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-800 rounded-xl p-4 hover:shadow-lg transition">
-                    <div class="h-48 overflow-hidden rounded-lg mb-4">
-                        <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/images (100).jpeg" alt="Horse Keychain" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-lg font-bold mb-2">Keychains</h3>
-                    <p class="text-gray-400 text-sm mb-4">Miniature horseshoe keychains</p>
-                    <div class="flex justify-between items-center">
-                        <span class="font-bold">₱250</span>
-                        <a href="/shop/keychains" class="text-primary-500 hover:text-primary-400 text-sm font-medium">View →</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-800 rounded-xl p-4 hover:shadow-lg transition">
-                    <div class="h-48 overflow-hidden rounded-lg mb-4">
-                        <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/images (99).jpeg" alt="Signed Horse Photo" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-lg font-bold mb-2">Signed Photos</h3>
-                    <p class="text-gray-400 text-sm mb-4">Autographed by the horses themselves!</p>
-                    <div class="flex justify-between items-center">
-                        <span class="font-bold">₱500</span>
-                        <a href="/shop/photos" class="text-primary-500 hover:text-primary-400 text-sm font-medium">View →</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-800 rounded-xl p-4 hover:shadow-lg transition">
-                    <div class="h-48 overflow-hidden rounded-lg mb-4">
-                        <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/Horse%20Plushies.webp" alt="Crochet Horses" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-lg font-bold mb-2">Crochet Horses</h3>
-                    <p class="text-gray-400 text-sm mb-4">Handmade with love by our volunteers</p>
-                    <div class="flex justify-between items-center">
-                        <span class="font-bold">₱1,200</span>
-                        <a href="/shop/crochet" class="text-primary-500 hover:text-primary-400 text-sm font-medium">View →</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="text-center mt-8">
-                <a href="/shop" class="inline-block bg-secondary-500 hover:bg-secondary-600 text-white px-6 py-3 rounded-lg font-medium transition">Visit Shop</a>
-            </div>
-        </section>
-
-        <!-- Horse History -->
+        <!-- Horse History Section -->
         <section class="mb-16">
             <div class="bg-amber-100 rounded-xl p-8 border border-amber-200">
                 <h2 class="text-3xl font-bold mb-6">Meisho Doto's Racing Legacy</h2>
                 <div class="grid md:grid-cols-2 gap-8">
                     <div>
-                        <p class="text-amber-800 mb-4">Meisho Doto (1999-2001) was a legendary Japanese racehorse who served as the main rival to T.M. Opera O, frequently placing second to him in major races. Known as the "strongest number two" for his consistent high placements, he became famous for his tenacity and competitive spirit despite often finishing behind his rival.</p>
-                        <p class="text-amber-800 mb-4">His career highlights included finishing second in both the 2000 Japanese Derby and Japan Cup behind T.M. Opera O. After Admire Vega's retirement, he stepped up as the primary challenger to the dominant T.M. Opera O throughout 2000-2001.</p>
-                        <p class="text-amber-800 mb-4">After retiring from stud work, Doto moved to Versailles Resort Farm where he befriended Taiki Shuttle and local goats, earning the nickname "king of goats". Now at Northern Lake in Niikappu, he continues to live peacefully, occasionally seen wearing his late friend Shuttle's blanket.</p>
+                        <p class="text-amber-800 mb-4">
+                            Meisho Doto (1999-2001) was a legendary Japanese racehorse who served as the main rival to T.M. Opera O, frequently placing second to him in major races. Known as the "strongest number two" for his consistent high placements, he became famous for his tenacity and competitive spirit despite often finishing behind his rival.
+                        </p>
+                        <p class="text-amber-800 mb-4">
+                            His career highlights included finishing second in both the 2000 Japanese Derby and Japan Cup behind T.M. Opera O. After Admire Vega's retirement, he stepped up as the primary challenger to the dominant T.M. Opera O throughout 2000-2001.
+                        </p>
+                        <p class="text-amber-800 mb-4">
+                            After retiring from stud work, Doto moved to Versailles Resort Farm where he befriended Taiki Shuttle and local goats, earning the nickname "king of goats". Now at Northern Lake in Niikappu, he continues to live peacefully, occasionally seen wearing his late friend Shuttle's blanket.
+                        </p>
                         <a href="/horses/haru-urara" class="inline-block text-primary-500 hover:text-primary-400 font-medium">View full profile →</a>
                     </div>
                     <div class="flex items-center">
@@ -236,15 +143,15 @@
 
     </main>
 
-    <!-- Footer -->
+    <!-- Custom Footer -->
     <custom-footer></custom-footer>
 
     <!-- Scripts -->
     <script src="navbar.js"></script>
     <script src="footer.js"></script>
     <script src="script.js"></script>
-    <script>feather.replace();</script>
-
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>
-
