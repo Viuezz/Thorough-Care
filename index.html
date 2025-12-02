@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -29,19 +30,17 @@
 </head>
 <body class="bg-amber-50 text-amber-900">
 
-    <!-- Custom Navbar -->
+    <!-- Navbar -->
     <custom-navbar></custom-navbar>
-    
-    <main class="container mx-auto px-4 py-8">
 
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
         <!-- Hero Section -->
         <section class="relative h-[80vh] rounded-xl overflow-hidden mb-16">
             <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/Horse%20Title.jpg" alt="Racehorses in field" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center px-4">
                 <h1 class="text-5xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">Thorough Care</h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-2xl text-white drop-shadow-lg">
-                    Providing sanctuary and second careers for retired Philippine racehorses
-                </p>
+                <p class="text-xl md:text-2xl mb-8 max-w-2xl text-white drop-shadow-lg">Providing sanctuary and second careers for retired Philippine racehorses</p>
                 <div class="flex gap-4">
                     <a href="/donate" class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-medium transition shadow-lg">Donate Now</a>
                     <a href="/visit" class="bg-secondary-500 hover:bg-secondary-600 text-white px-6 py-3 rounded-lg font-medium transition shadow-lg">Schedule Visit</a>
@@ -53,7 +52,7 @@
         <section class="mb-16">
             <h2 class="text-3xl font-bold mb-8 text-center">Current Campaigns</h2>
             <div class="grid md:grid-cols-3 gap-6">
-                <!-- Campaign Card 1 -->
+                <!-- New Stable Construction -->
                 <div class="bg-amber-100 rounded-xl p-6 hover:shadow-lg transition border border-amber-200">
                     <div class="h-48 overflow-hidden rounded-lg mb-4">
                         <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/20251201_023059.jpg" alt="New Stable Project" class="w-full h-full object-cover">
@@ -70,7 +69,7 @@
                     <a href="/campaigns/new-stable" class="inline-block mt-4 text-primary-500 hover:text-primary-400 font-medium">Learn more →</a>
                 </div>
 
-                <!-- Campaign Card 2 -->
+                <!-- Monthly Feed Program -->
                 <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg transition">
                     <div class="h-48 overflow-hidden rounded-lg mb-4">
                         <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/20251201_022200.jpg" alt="Horse Feeding Program" class="w-full h-full object-cover">
@@ -87,7 +86,7 @@
                     <a href="/campaigns/feed-program" class="inline-block mt-4 text-primary-500 hover:text-primary-400 font-medium">Learn more →</a>
                 </div>
 
-                <!-- Campaign Card 3 -->
+                <!-- Veterinary Care Fund -->
                 <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg transition">
                     <div class="h-48 overflow-hidden rounded-lg mb-4">
                         <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/Horse%20Vet.jpg" alt="Veterinary Care" class="w-full h-full object-cover">
@@ -106,14 +105,47 @@
             </div>
         </section>
 
-        <!-- Featured Horses -->
+        <!-- Meet Our Horses -->
         <section class="mb-16">
             <h2 class="text-3xl font-bold mb-8 text-center">Meet Our Horses</h2>
             <div class="grid md:grid-cols-4 gap-6">
-                <!-- Example Horse Cards (same as before, you can keep them) -->
+                <!-- Example horse cards -->
+                <div class="bg-amber-100 rounded-xl overflow-hidden hover:shadow-lg transition border border-amber-200">
+                    <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/20251201_022138.jpg" alt="Thunderbolt" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Haru Urara</h3>
+                        <p class="text-amber-700 text-sm mb-2">Retired 2004 | 0 wins, 113 loses</p>
+                        <p class="text-amber-800 mb-4">The Shining star of Losers Everywhere. Won a million hearts around the world.</p>
+                        <a href="/horses/thunderbolt" class="text-primary-500 hover:text-primary-400 text-sm font-medium">Visit profile →</a>
+                    </div>
+                </div>
+                <!-- Add the other horse cards similarly -->
             </div>
             <div class="text-center mt-8">
                 <a href="/horses" class="inline-block bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-medium transition">View All Horses</a>
+            </div>
+        </section>
+
+        <!-- Horse Merchandise -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Horse Merchandise</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- Example merchandise card -->
+                <div class="bg-gray-800 rounded-xl p-4 hover:shadow-lg transition">
+                    <div class="h-48 overflow-hidden rounded-lg mb-4">
+                        <img src="https://huggingface.co/spaces/Kyubi-kit/hooves-hearts-haven/resolve/main/images/images (98).jpeg" alt="Horse Plushie" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Plushies</h3>
+                    <p class="text-gray-400 text-sm mb-4">Cuddly versions of your favorite horses</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">₱850</span>
+                        <a href="/shop/plushies" class="text-primary-500 hover:text-primary-400 text-sm font-medium">View →</a>
+                    </div>
+                </div>
+                <!-- Add the other merchandise cards similarly -->
+            </div>
+            <div class="text-center mt-8">
+                <a href="/shop" class="inline-block bg-secondary-500 hover:bg-secondary-600 text-white px-6 py-3 rounded-lg font-medium transition">Visit Shop</a>
             </div>
         </section>
 
@@ -123,15 +155,9 @@
                 <h2 class="text-3xl font-bold mb-6">Meisho Doto's Racing Legacy</h2>
                 <div class="grid md:grid-cols-2 gap-8">
                     <div>
-                        <p class="text-amber-800 mb-4">
-                            Meisho Doto (1999-2001) was a legendary Japanese racehorse who served as the main rival to T.M. Opera O, frequently placing second to him in major races. Known as the "strongest number two" for his consistent high placements, he became famous for his tenacity and competitive spirit despite often finishing behind his rival.
-                        </p>
-                        <p class="text-amber-800 mb-4">
-                            His career highlights included finishing second in both the 2000 Japanese Derby and Japan Cup behind T.M. Opera O. After Admire Vega's retirement, he stepped up as the primary challenger to the dominant T.M. Opera O throughout 2000-2001.
-                        </p>
-                        <p class="text-amber-800 mb-4">
-                            After retiring from stud work, Doto moved to Versailles Resort Farm where he befriended Taiki Shuttle and local goats, earning the nickname "king of goats". Now at Northern Lake in Niikappu, he continues to live peacefully, occasionally seen wearing his late friend Shuttle's blanket.
-                        </p>
+                        <p class="text-amber-800 mb-4">Meisho Doto (1999-2001) was a legendary Japanese racehorse who served as the main rival to T.M. Opera O, frequently placing second to him in major races. Known as the "strongest number two" for his consistent high placements, he became famous for his tenacity and competitive spirit despite often finishing behind his rival.</p>
+                        <p class="text-amber-800 mb-4">His career highlights included finishing second in both the 2000 Japanese Derby and Japan Cup behind T.M. Opera O. After Admire Vega's retirement, he stepped up as the primary challenger to the dominant T.M. Opera O throughout 2000-2001.</p>
+                        <p class="text-amber-800 mb-4">After retiring from stud work, Doto moved to Versailles Resort Farm where he befriended Taiki Shuttle and local goats, earning the nickname "king of goats". Now at Northern Lake in Niikappu, he continues to live peacefully, occasionally seen wearing his late friend Shuttle's blanket.</p>
                         <a href="/horses/haru-urara" class="inline-block text-primary-500 hover:text-primary-400 font-medium">View full profile →</a>
                     </div>
                     <div class="flex items-center">
@@ -140,18 +166,15 @@
                 </div>
             </div>
         </section>
-
     </main>
 
-    <!-- Custom Footer -->
+    <!-- Footer -->
     <custom-footer></custom-footer>
 
     <!-- Scripts -->
     <script src="navbar.js"></script>
     <script src="footer.js"></script>
     <script src="script.js"></script>
-    <script>
-        feather.replace();
-    </script>
+    <script>feather.replace();</script>
 </body>
 </html>
